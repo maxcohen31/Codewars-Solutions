@@ -1,3 +1,4 @@
-# A-bored-math-student
-# Self-taught. I'm currently learning.
+# self taught python programmer.
+I enjoy coding. Actually i am a math student.
+
 
