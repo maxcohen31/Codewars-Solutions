@@ -1,5 +1,5 @@
 def insiemistica(lista1, lista2):
-    insieme_vuoto = {}
+    insieme_vuoto = set{}
 
     print("Le operazioni risultano: ")
 
