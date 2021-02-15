@@ -56,15 +56,3 @@ class Square(Rectangle):
 
     def __str__(self):
         return 'Square(side = {})'.format(self.side)
-
-
-
-
-
-
-
-
-
-
-
-
