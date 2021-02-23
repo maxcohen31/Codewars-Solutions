@@ -31,6 +31,7 @@ def add_time(time1, time2):
     elif time1_for == 'PM' and hours_sum < 12:
         time1_for == 'PM'     
     
+    # Return the clock variable as final result
     
     clock = str(hours_sum) + ':' + str(minutes_sum) + ' ' + time1_for
     return clock
