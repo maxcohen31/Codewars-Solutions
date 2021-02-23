@@ -13,7 +13,8 @@ def add_time(time1, time2):
     minutes_sum = int(time1_min) + int(time2_minutes)
     hours_sum = int(time1_hour_splt) + int(time2_hour) % 12
 
-
+    # Checking for minutes more than 60, if so add 1 hour
+   
     if minutes_sum >= 60:
         minutes_sum = minutes_sum - 60
         hours_sum += 1
