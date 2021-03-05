@@ -99,15 +99,3 @@ class Category:
         else:
             return False
     
-   
-
-
-    
-
-  
-        
-    
-    
-    
-        
-                    
