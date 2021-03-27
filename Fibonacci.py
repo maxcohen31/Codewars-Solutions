@@ -1,4 +1,6 @@
 # A program to find the n-terms of the Fibonacci sequence
+from functools import reduce
+
 def fibonacci(n):
     n_1 = 0
     n_2 = 1
@@ -10,8 +12,8 @@ def fibonacci(n):
         n_2 = n_3
         print(n_3)
 
-fibonacci(4)
-
+fib = lambda n: reduce(lambda x, _: x + [x[-2] + x[-1]], range(n - 2), [0, 1])
+                                                  
 
 
 
