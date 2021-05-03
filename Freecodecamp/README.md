@@ -1,4 +1,4 @@
-# Project Description
+# Arithmetic Formatter
 
 ### Assignment
 
