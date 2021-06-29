@@ -1,3 +1,3 @@
-# Casual coding
+# Codewars challenges and freeCodeCamp projects
 
 
