@@ -1,13 +1,11 @@
 import random
 
 # Function to generate a random password
-
 def pass_generator():
 
     characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789*£$%&@#'
 
     # Main loop
-
     try:
         passwd_choice = int(input('How long do you want your password to be? 8/16 '))
         if passwd_choice == 8:
@@ -30,5 +28,4 @@ def pass_generator():
         print('Error!')
 
 # Calling the function
-
 pass_generator()
