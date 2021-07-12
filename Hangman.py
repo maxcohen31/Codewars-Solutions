@@ -20,7 +20,7 @@ while play:
             print('_', end = '')
 
 
-    guess = input(' Try to guess the word: ')
+    guess = input('Try to guess the word: ')
     guesses.append(guess.lower())
 
     if guess.lower() in word.lower():
