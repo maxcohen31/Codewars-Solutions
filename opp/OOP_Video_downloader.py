@@ -10,7 +10,6 @@ class Master():
         self.main_window.geometry('500x200')
 
         # Initializing labels
-
         self.label1 = Label(self.main_window, text = 'Youtube video downloader')
         self.label1.grid(row = 0, columnspan= 3, ipady = 10, sticky = N)
         self.url_link = Label(self.main_window, text = 'URL')
@@ -21,7 +20,6 @@ class Master():
         self.saving_path.grid(row = 2, column = 0, pady = 10, sticky = W)
 
         # Initializing Entry
-
         get_url = StringVar()
         get_path = StringVar()
         self.url_entry = Entry(self.main_window, textvariable = get_url,  width = 50)
@@ -30,12 +28,10 @@ class Master():
         self.entry_path.grid(row = 2, column = 1, pady = 10, sticky = N)
 
         # Initializing download button
-
         self.dwl_button = Button(self.main_window, text = 'Download', command = self.__getstarted)
         self.dwl_button.grid(row = 4, columnspan = 3, pady = 5, sticky = N)
 
     # Initializing the getstarted function
-
     def __getstarted(self):
         get_url = self.url_entry.get()
         get_path = self.entry_path.get()
@@ -49,12 +45,10 @@ class Master():
             self.notification.config(text = 'Impossible to download the video')
 
     # Method to call the class Master
-
     def master_call(self):
         self.main_window.mainloop()
 
 # Calling the class Master
-
 if __name__ == "__main__":
     master = Master()
     master.master_call()
