@@ -2,19 +2,16 @@
 
 
 # List of words to choose from
-
 import random
 words = ['Mathematics', 'Arch', 'illegal', 'illustrious', 'Cypherpunk', 'Algebra', 'Topology']
 
 # Variables
-
 word = random.choice(words)
 guesses = []
 hp = 5
 play = True
 
 # Main loop
-
 while play:
     for letters in word.lower():
         if letters.lower() in guesses:
