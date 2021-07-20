@@ -9,7 +9,5 @@ def move_zeros(arr):
     return arr
 
 
-
-
 x = [0, 1, 0, 3, False, 12, 5, 7, 0 ,12, 2, 3, 4]
 print(move_zeros(x))
