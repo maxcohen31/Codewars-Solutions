@@ -1,17 +1,16 @@
-def fizzbuzz(n):
-    values = [i for i in range(1, n+1)]
-    
-    for idx in range(len(values)):
-        if values[idx] % 3 == 0 and values[idx] % 5 != 0:
-            values[idx] = "Fizz"
-        elif values[idx] % 5 == 0 and values[idx] % 3 != 0:
-            values[idx] = "Buzz"
-        elif values[idx] % 3 == 0 and values[idx] % 5 == 0:
-            values[idx] = "FizzBuzz"
-    return values
+def solution(number: int) -> list:    
+    mult_5 = []
+    mult_3 = []
+    mult_3_5 = []
 
-    
+    for i in range(1, number):
+        if i % 3 == 0 and i % 5 == 0:
+            mult_3_5.append(i)
+        elif i % 3 == 0:
+            mult_3.append(i)
+        elif i % 5 == 0:
+            mult_5.append(i)
+       
+    return [len(mult_3), len(mult_5), len(mult_3_5)]
 
-
-
-print(fizzbuzz(10))
+print(solution(141))
